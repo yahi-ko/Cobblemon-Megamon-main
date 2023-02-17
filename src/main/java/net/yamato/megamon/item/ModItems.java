@@ -9,9 +9,9 @@ import net.yamato.megamon.Megamon;
 
 public class ModItems {
     public static final Item BEAD = registerItem("bead",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+            new Item(new FabricItemSettings().group(ModItemGroup.MEGAMON)));
     public static final Item ARAMASA_CARD = registerItem("aramasa_card",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+            new Item(new FabricItemSettings().group(ModItemGroup.MEGAMON)));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registry.ITEM, new Identifier(Megamon.MOD_ID, name), item);
